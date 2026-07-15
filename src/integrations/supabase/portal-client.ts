@@ -1,7 +1,7 @@
 import { createClient, type SupabaseClient } from '@supabase/supabase-js';
 
-const SUPABASE_URL = import.meta.env.VITE_SUPABASE_URL;
-const SUPABASE_PUBLISHABLE_KEY = import.meta.env.VITE_SUPABASE_PUBLISHABLE_KEY;
+const SUPABASE_URL = "https://ylvhhlykyojudldcmzou.supabase.co";
+const SUPABASE_PUBLISHABLE_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InlsdmhobHlreW9qdWRsZGNtem91Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODQwMjkzNzUsImV4cCI6MjA5OTYwNTM3NX0.iiSRHo_fnDvFHtwEYPGXPHr7YYw6HeWU-LHKL1u2heM";
 
 // Note: intentionally untyped (no <Database> generic) to avoid TS2589
 // "type instantiation excessively deep" caused by the very large generated
