@@ -1,6 +1,11 @@
 import type { Database } from '@/integrations/supabase/types';
 
-type ProdTableName = keyof Database['public']['Tables'];
+// Loosened to `string` because the generated Database type is out-of-date
+// with the migrated schema. Restore `keyof Database['public']['Tables']`
+// once types.ts is regenerated.
+type ProdTableName = string;
+type _KeepDatabaseImport = Database;
+
 
 const tablePrefix = import.meta.env.VITE_TABLE_PREFIX ?? '';
 
